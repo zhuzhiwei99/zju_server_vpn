@@ -77,6 +77,7 @@ INFO[0000] RESTful API listening at: 127.0.0.1:9090
 ```
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/a00b221455a140f985f38e942dab321c.png)
+
 当前terminal不要关闭，不要ctl+c。新开terminal进行其他活动
 
 #### 2.2.2.2.配置代理
