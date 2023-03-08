@@ -27,6 +27,7 @@ export https_proxy="socks5://127.0.0.1:7891"
 >- 实测V2ray更稳定
 # 0.软件准备
 服务器访问外网软件：zjunet
+
 梯子：Clash / V2ray
 # 1.服务准备
 科学上网机场：比如[Glados](https://glados.rocks)，zju邮箱免费使用一年教育套餐
@@ -194,4 +195,5 @@ cd v2ray-linux-64
 关闭Vray：`Ctl+C`
 # 参考资料
 [ZJU Linux 服务器访问Github](https://www.wolai.com/oKMxANyepvBkXdFY3sKv7y)
+
 [Linux使用v2ray](https://www.hduzn.cn/2022/06/14/Linux%E4%BD%BF%E7%94%A8v2ray/)
