@@ -13,8 +13,8 @@ export https_proxy="http://127.0.0.1:7890"
 #或者用V2ray
 cd v2ray-linux-64
 ./v2ray
-export http_proxy="socks5://127.0.0.1:7891"
-export https_proxy="socks5://127.0.0.1:7891"
+export http_proxy="http://127.0.0.1:10809"
+export https_proxy="http://127.0.0.1:10809"
 # 配置完成，开始科学上网
 
 ```
