@@ -32,7 +32,7 @@ export https_proxy="http://127.0.0.1:10809"
 
 # vpn安装与使用
 
-##[zjunet安装与使用](https://github.com/QSCTech/zjunet/blob/master/README.zh.md)
+## [zjunet安装与使用](https://github.com/QSCTech/zjunet/blob/master/README.zh.md)
 
 ### zjunet安装
 
