@@ -24,24 +24,42 @@ export https_proxy="http://127.0.0.1:10809"
 
 # 准备
 
-校内网-校外网 vpn软件：zjunet
+校内网->国内网 vpn软件：zjunet
 
-国内网-国外网 vpn软件：Clash / V2ray
+国内网->国外网 vpn软件：Clash / V2ray
 
-科学上网服务器节点：比如[Glados](https://glados.rocks)，zju邮箱免费使用一年教育套餐
+配置[zju ubuntu镜像源](https://mirror.zju.edu.cn/docs/ubuntu/) （安装zjunet需要）
+
+根据自己的服务器系统版本选择合适的命令，以ubuntu22.04系统为例:
+```bash
+sudo mv /etc/apt/sources.list /etc/apt/sources.list.bak
+sudo vim /etc/apt/sources.list 
+```
+将以下内容复制进去，再按esc，再输入`:wq`保存
+```bash
+deb https://mirrors.zju.edu.cn/ubuntu/ jammy main restricted universe multiverse
+deb https://mirrors.zju.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse
+deb https://mirrors.zju.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse
+deb https://mirrors.zju.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
+deb https://mirrors.zju.edu.cn/ubuntu/ jammy-proposed main restricted universe multiverse
+```
+保存后，更新服务器ubuntu系统的包
+```bash
+sudo apt update  # 更新包索引
+sudo apt upgrade  # 升级已安装的包
+```
 
 # vpn安装与使用
 
 ## [zjunet安装与使用](https://github.com/QSCTech/zjunet/blob/master/README.zh.md)
 
 ### zjunet安装
-
-直接在能连上校园网的服务器上输入以下命令就可以安装
+输入以下命令安装zjunet
 ```bash
 curl https://dl.zjuqsc.com/linux/qsc.public.key | sudo apt-key add -
 curl https://dl.zjuqsc.com/linux/debian/qsc.list | sudo tee /etc/apt/sources.list.d/qsc.list
-sudo apt-get update
-sudo apt-get install zjunet
+sudo apt update
+sudo apt install zjunet
 ```
  ### zjunet使用
 
